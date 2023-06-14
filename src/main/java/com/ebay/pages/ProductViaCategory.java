@@ -81,10 +81,7 @@ public class ProductViaCategory {
 		driver.findElement(selectLocation).click();
 		driver.findElement(apply).click();
 
-		// Without PageFactory
-		// Dashboard dash=new Dashboard(driver);
-
-		
+			
 		// with pagefactory
 		ProductViaSearch psearch = PageFactory.initElements(driver, ProductViaSearch.class);
 		return psearch;

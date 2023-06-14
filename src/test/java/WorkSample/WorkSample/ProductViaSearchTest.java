@@ -12,12 +12,12 @@ import com.ebay.pages.ProductViaCategory;
 public class ProductViaSearchTest extends BaseClass {
 	
 	
-	@Test(description = "Search product by Category", dataProvider = "price", dataProviderClass = DataProviders.class )
-	public void EnterPrice(String minimupPrice, String maximunPrice) 
+	@Test(description = "Product by Search", dataProvider = "product", dataProviderClass = DataProviders.class )
+	public void EnterProductToSearch(String productsearch) 
 	{
-		ProductViaCategory price=new ProductViaCategory(driver);
-		ProductViaSearch psearch =price.SelectProduct(minimupPrice, maximunPrice);
-		Assert.assertTrue(driver.getCurrentUrl().contains("Cell-Phones-Smartphones"), "Item not found");
+		ProductViaSearch price=new ProductViaSearch(driver);
+		ProductViaSearch psearch =price.enterProduct(productsearch);
+		Assert.assertTrue(driver.getCurrentUrl().contains("MacBook"), "Item not found");
 	}
 	
 	

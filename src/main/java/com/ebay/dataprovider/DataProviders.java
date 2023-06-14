@@ -8,15 +8,15 @@ public class DataProviders
 {
 	
 	@DataProvider(name="price")
-	public static Object[][] getData() throws IOException
+	public static Object[][] getDataForPrice() throws IOException
 	{
 		return	ExcelUtility.getDataFromSheet("Price");
 	}
 	
-	@DataProvider(name="User")
-	public static Object[][] getDataForUser() throws IOException
+	@DataProvider(name="product")
+	public static Object[][] getDataForSearch() throws IOException
 	{
-		return	ExcelUtility.getDataFromSheet("Product");
+		return ExcelUtility.getDataFromSheet("Product");
 	}
 	
 }

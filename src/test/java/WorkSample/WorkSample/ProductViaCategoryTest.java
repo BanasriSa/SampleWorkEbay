@@ -12,7 +12,7 @@ import com.ebay.pages.ProductViaCategory;
 public class ProductViaCategoryTest extends BaseClass {
 	
 	
-	@Test(description = "Search product by Category", dataProvider = "price", dataProviderClass = DataProviders.class )
+	@Test(description = "Product by Category", dataProvider = "price", dataProviderClass = DataProviders.class )
 	public void EnterPrice(String minimupPrice, String maximunPrice) 
 	{
 		ProductViaCategory price=new ProductViaCategory(driver);

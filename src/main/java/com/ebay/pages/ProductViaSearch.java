@@ -23,21 +23,20 @@ public class ProductViaSearch {
 	public void selectCategory(String Books) {
         WebElement element = driver.findElement(selectElement);
         Select select = new Select(element);
-        select.selectByVisibleText(Books);
+        select.selectByVisibleText("Cameras & Photo");
     }
+	
 	//Click on serach button
 	By search= By.xpath("//td[@class='gh-td gh-sch-btn']/input[@value='Search']");
-	
-	
-	public ProductViaSearch enterproduct(String productsearch) {
-		// driver.findElement(username).sendKeys(uname);
-
+		
+	//creating a method to pass parameter	
+	public ProductViaSearch enterProduct(String productsearch) {
 		driver.findElement(searchMacbook).sendKeys(productsearch);
 		driver.findElement(selectElement).click();
 		driver.findElement(search).click();
 		
-		ProductViaSearch psearch = PageFactory.initElements(driver, ProductViaSearch.class);
-		return psearch;
+		ProductViaSearch pcateg = PageFactory.initElements(driver, ProductViaSearch.class);
+		return pcateg;
 		
 		
 	
