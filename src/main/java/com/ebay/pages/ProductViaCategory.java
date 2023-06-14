@@ -63,7 +63,7 @@ public class ProductViaCategory {
 	By apply = By.xpath("//div[@class='x-overlay-footer__apply']/child::button");
 
 
-	public ProductViaSearch SelectProduct(String minimupPrice, String maximunPrice) {
+	public ProductViaCategory SelectProduct(String minimupPrice, String maximunPrice) {
 		// driver.findElement(username).sendKeys(uname);
 
 		driver.findElement(shopByCategory).click();
@@ -83,7 +83,7 @@ public class ProductViaCategory {
 
 			
 		// with pagefactory
-		ProductViaSearch psearch = PageFactory.initElements(driver, ProductViaSearch.class);
+		ProductViaCategory psearch = PageFactory.initElements(driver, ProductViaCategory.class);
 		return psearch;
 
 	}

@@ -16,7 +16,7 @@ public class ProductViaCategoryTest extends BaseClass {
 	public void EnterPrice(String minimupPrice, String maximunPrice) 
 	{
 		ProductViaCategory price=new ProductViaCategory(driver);
-		ProductViaSearch psearch =price.SelectProduct(minimupPrice, maximunPrice);
+		ProductViaCategory psearch =price.SelectProduct(minimupPrice, maximunPrice);
 		Assert.assertTrue(driver.getCurrentUrl().contains("Cell-Phones-Smartphones"), "Item not found");
 	}
 	

@@ -23,7 +23,7 @@ public class ProductViaSearch {
 	public void selectCategory(String Books) {
         WebElement element = driver.findElement(selectElement);
         Select select = new Select(element);
-        select.selectByVisibleText("Cameras & Photo");
+        select.selectByVisibleText(Books);
     }
 	
 	//Click on serach button

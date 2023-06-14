@@ -1,65 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-15T00:49:40 IST" name="Default suite" finished-at="2023-06-15T00:50:12 IST" duration-ms="31737">
+  <suite started-at="2023-06-15T01:22:51 IST" name="Suite" finished-at="2023-06-15T01:23:19 IST" duration-ms="28600">
     <groups>
     </groups>
-    <test started-at="2023-06-15T00:49:40 IST" name="Default test" finished-at="2023-06-15T00:50:12 IST" duration-ms="31737">
-      <class name="WorkSample.WorkSample.SEIT2">
-        <test-method signature="Test2()[pri:0, instance:WorkSample.WorkSample.SEIT2@52e6fdee]" started-at="2023-06-15T00:49:40 IST" name="Test2" finished-at="2023-06-15T00:50:12 IST" duration-ms="31614" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to find element with locator By.xpath: //li[@id='item5e205ce3a7']/child::div[@class='s-item__wrapper clearfix']/child::div[@class='s-item__info clearfix']/a/div/span/child::span
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20'
-Driver info: driver.version: RemoteWebDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //li[@id='item5e205ce3a7']/child::div[@class='s-item__wrapper clearfix']/child::div[@class='s-item__info clearfix']/a/div/span/child::span
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at WorkSample.WorkSample.SEIT2.Test2(SEIT2.java:56)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+    <test started-at="2023-06-15T01:22:51 IST" name="Test" finished-at="2023-06-15T01:23:19 IST" duration-ms="28600">
+      <class name="WorkSample.WorkSample.ProductViaSearchTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:WorkSample.WorkSample.ProductViaSearchTest@245b4bdc]" started-at="2023-06-15T01:22:51 IST" name="setup" finished-at="2023-06-15T01:23:00 IST" duration-ms="8693" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test2 -->
-      </class> <!-- WorkSample.WorkSample.SEIT2 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- setup -->
+        <test-method signature="EnterProductToSearch(java.lang.String)[pri:0, instance:WorkSample.WorkSample.ProductViaSearchTest@245b4bdc]" started-at="2023-06-15T01:23:02 IST" name="EnterProductToSearch" description="Product by Search" data-provider="product" finished-at="2023-06-15T01:23:09 IST" duration-ms="7585" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MacBook]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnterProductToSearch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:WorkSample.WorkSample.ProductViaSearchTest@245b4bdc]" started-at="2023-06-15T01:23:09 IST" name="tearDown" finished-at="2023-06-15T01:23:10 IST" duration-ms="774" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- WorkSample.WorkSample.ProductViaSearchTest -->
+      <class name="WorkSample.WorkSample.ProductViaCategoryTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:WorkSample.WorkSample.ProductViaCategoryTest@5b239d7d]" started-at="2023-06-15T01:22:51 IST" name="setup" finished-at="2023-06-15T01:23:00 IST" duration-ms="9428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="EnterPrice(java.lang.String,java.lang.String)[pri:0, instance:WorkSample.WorkSample.ProductViaCategoryTest@5b239d7d]" started-at="2023-06-15T01:23:02 IST" name="EnterPrice" description="Product by Category" data-provider="price" finished-at="2023-06-15T01:23:19 IST" duration-ms="17305" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[100.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1000.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnterPrice -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:WorkSample.WorkSample.ProductViaCategoryTest@5b239d7d]" started-at="2023-06-15T01:23:19 IST" name="tearDown" finished-at="2023-06-15T01:23:19 IST" duration-ms="433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- WorkSample.WorkSample.ProductViaCategoryTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
