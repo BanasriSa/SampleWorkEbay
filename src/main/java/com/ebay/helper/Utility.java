@@ -266,7 +266,6 @@ public class Utility {
 
 	public static void selectValueFromList(WebDriver driver, By locator, String value) {
 		List<WebElement> allElements = driver.findElements(locator);
-
 		for (WebElement ele : allElements) {
 			System.out.println("Values from calendar is " + ele.getText());
 
@@ -405,4 +404,6 @@ public class Utility {
 
 	}
 
+	
+	
 }
