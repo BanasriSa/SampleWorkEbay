@@ -13,13 +13,10 @@ public class ProductViaSearchTest extends BaseClass {
 	
 	
 	@Test(description = "Product by Search", dataProvider = "product", dataProviderClass = DataProviders.class )
-	public void EnterProductToSearch(String productsearch) 
+	public void EnterProductToSearch(String productsearch) throws InterruptedException 
 	{
 		ProductViaSearch price=new ProductViaSearch(driver);
 		ProductViaSearch psearch =price.enterProduct(productsearch);
-		Assert.assertTrue(driver.getCurrentUrl().contains("MacBook"), "Item not found");
+		Assert.assertTrue(driver.getTitle().contains("MacBook"), "Page not found");
 	}
-	
-	
-	
 }
