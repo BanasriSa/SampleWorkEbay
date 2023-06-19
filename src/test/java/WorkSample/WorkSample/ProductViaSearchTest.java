@@ -6,8 +6,8 @@ import org.testng.annotations.Test;
 
 import com.ebay.base.BaseClass;
 import com.ebay.dataprovider.DataProviders;
-import com.ebay.pages.ProductViaSearch;
 import com.ebay.pages.ProductViaCategory;
+import com.ebay.pages.ProductViaSearch;
 
 public class ProductViaSearchTest extends BaseClass {
 	

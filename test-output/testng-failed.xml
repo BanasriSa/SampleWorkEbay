@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="WorkSample.WorkSample.ProductViaSearchTest">
+      <class name="WorkSample.WorkSample.ProductViaCategoryTest">
         <methods>
+          <include name="setupMakeMyTrip"/>
           <include name="tearDown"/>
-          <include name="EnterProductToSearch"/>
           <include name="setup"/>
+          <include name="EnterPrice" invocation-numbers="0"/>
         </methods>
-      </class> <!-- WorkSample.WorkSample.ProductViaSearchTest -->
+      </class> <!-- WorkSample.WorkSample.ProductViaCategoryTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
