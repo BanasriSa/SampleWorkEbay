@@ -69,7 +69,7 @@ public class ProductViaCategory {
 	   By filterList = By.xpath("//div[@class='x-flyout brm__flyout brm__flyout--selected'][1]/descendant::ul[@class='brm__aspect-list']/child::li/a/span[@class='brm__item-label']");
 
 
-	public ProductViaCategory SelectProduct(String minimupPrice, String maximunPrice) {
+	public ProductViaCategory  SelectProduct(String minimupPrice, String maximunPrice) {
 		// driver.findElement(username).sendKeys(uname);	
 		driver.findElement(minP).sendKeys(minimupPrice);
 		driver.findElement(maxP).sendKeys(maximunPrice);
@@ -122,6 +122,7 @@ public class ProductViaCategory {
 		public void maxPrice() {
 			driver.findElement(maxP).click();
 			}
+		
 	public void selectLocationfilter() {
 	driver.findElement(location).click();
 	}
